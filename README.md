@@ -91,8 +91,8 @@ This project is open source and available under the MIT License.
 ## 👤 Author
 
 Your Name
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourusername)
+- GitHub: https://github.com/amanaveeyaanamika-max
+- LinkedIn: file:///C:/Users/Lenovo/.kiro/portfolio-website/www.linkedin.com/in/vageesh-gaonkar-9b62703b0
 
 ## 🙏 Acknowledgments
 
