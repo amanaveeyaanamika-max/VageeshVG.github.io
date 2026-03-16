@@ -92,7 +92,7 @@ This project is open source and available under the MIT License.
 
 Your Name
 - GitHub: https://github.com/amanaveeyaanamika-max
-- LinkedIn: file:///C:/Users/Lenovo/.kiro/portfolio-website/www.linkedin.com/in/vageesh-gaonkar-9b62703b0
+- LinkedIn:www.linkedin.com/in/vageesh-gaonkar-9b62703b0
 
 ## 🙏 Acknowledgments
 
