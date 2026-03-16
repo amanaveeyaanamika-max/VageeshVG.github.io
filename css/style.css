@@ -242,62 +242,41 @@ section {
 }
 
 
-/* Tech Stack Ticker */
-.ticker-section {
+/* Quote Section */
+.quote-section {
     background: var(--dark-bg);
-    padding: 18px 0;
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    overflow: hidden;
+    padding: 50px 20px;
+    text-align: center;
 }
 
-.ticker-label {
+.quote-content {
+    max-width: 700px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease both;
+}
+
+.quote-mark {
+    font-size: 5rem;
+    line-height: 0;
+    vertical-align: -2rem;
     color: var(--primary-color);
-    font-weight: 700;
-    font-size: 0.85rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    white-space: nowrap;
-    padding-left: 2rem;
-    flex-shrink: 0;
+    font-family: Georgia, serif;
+    opacity: 0.6;
 }
 
-.ticker-wrapper {
-    overflow: hidden;
-    flex: 1;
+.quote-text {
+    font-size: 1.4rem;
+    color: #e2e8f0;
+    font-style: italic;
+    line-height: 1.8;
+    margin-bottom: 1rem;
 }
 
-.ticker-track {
-    display: flex;
-    gap: 3rem;
-    width: max-content;
-    animation: ticker 25s linear infinite;
-}
-
-.ticker-track span {
-    color: #cbd5e1;
-    font-size: 0.95rem;
-    font-weight: 500;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    transition: color 0.3s;
-}
-
-.ticker-track span:hover {
+.quote-author {
     color: var(--primary-color);
-}
-
-.ticker-track i {
-    font-size: 1.1rem;
-    color: var(--primary-color);
-}
-
-@keyframes ticker {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1px;
 }
 
 /* About Section */
