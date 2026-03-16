@@ -18,7 +18,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 70px;
+    scroll-padding-top: 80px;
 }
 
 body {
@@ -34,13 +34,7 @@ body {
     padding: 0 20px;
 }
 
-/*Profile picture*/
-.about-image img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-}
+
 
 /* Navigation Bar */
 .navbar {
@@ -225,7 +219,7 @@ body {
 /* Section Styles */
 section {
     padding: 80px 0;
-    scroll-margin-top: 70px;
+    scroll-margin-top: 80px;
 }
 
 .section-title {
