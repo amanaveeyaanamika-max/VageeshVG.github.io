@@ -30,11 +30,6 @@
         </div>
     </nav>
 
-    <!--Profile picture-->
-    <div class="about-image">
-    <img src="images/VGpicAI1.jpg" alt="Your Name">
-</div>
-
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
@@ -55,7 +50,7 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="images/profile.jpg" alt="Profile Photo">
+                    <img src="images/VGpicAI1.jpg" alt="Vageesh Vishwanath Gaonkar">
                 </div>
                 <div class="about-text">
                     <h3>Hello! I'm a passionate Learner</h3>
@@ -227,17 +222,18 @@
                         <a href="https://instagram.com/vageesh_v_gaonkar" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/myknnwdk" method="POST">
                     <div class="form-group">
-                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" placeholder="Your Email" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p class="form-status" id="formStatus"></p>
                 </form>
             </div>
         </div>

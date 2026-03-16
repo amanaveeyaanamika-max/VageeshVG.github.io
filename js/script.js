@@ -71,22 +71,42 @@ if (skillsSection) {
     observer.observe(skillsSection);
 }
 
-// Contact Form Handling
+// Contact Form Handling via Formspree
 const contactForm = document.getElementById('contactForm');
+const formStatus = document.getElementById('formStatus');
+
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-        
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-        
-        // Here you would typically send this data to a backend
-        // For now, we'll just show an alert
-        alert(`Thank you ${name}! Your message has been received. I'll get back to you at ${email} soon!`);
-        
-        // Reset form
-        contactForm.reset();
+
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
+
+        const data = new FormData(contactForm);
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+                formStatus.textContent = '✅ Message sent! I\'ll get back to you soon.';
+                formStatus.style.color = '#22c55e';
+                contactForm.reset();
+            } else {
+                formStatus.textContent = '❌ Something went wrong. Please try again.';
+                formStatus.style.color = '#ef4444';
+            }
+        } catch {
+            formStatus.textContent = '❌ Network error. Please try again.';
+            formStatus.style.color = '#ef4444';
+        }
+
+        submitBtn.textContent = 'Send Message';
+        submitBtn.disabled = false;
     });
 }
 
